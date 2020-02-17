@@ -1,0 +1,382 @@
+/* Header Begin */
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    min-height: 12vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo{
+    margin: 0 0 0 20%;
+    max-width: 10%;
+    height: 12vh;
+    float: left;
+    color: black;
+    text-align: center;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+    font-family: "Raleway";
+    line-height: 40px;
+    font-size: 40px;
+}
+
+.nav-list{
+    max-width: 45%;
+    margin: 0 0 0 30%;
+    padding: 0;
+    float: left;
+    height: 12vh;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    align-items: center;
+}
+
+.nav-list li{
+    display: inline-block;
+    font-family: "Cairo";
+    margin: 0 12px;
+}
+
+.nav-link{
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 auto;
+}
+
+.nav-item{
+    margin: 0 10px;
+    list-style-type: none;
+    background: linear-gradient(180deg, transparent 90%, orange 10%);
+    background-position: right 100px top 0;
+    background-repeat: no-repeat;
+    transition: .5s;
+    display: inline;
+}
+
+.nav-item:hover,
+.nav-item.active{
+    background-position: right 0 top 0;
+}
+
+.nav-item.active:hover{
+    background: linear-gradient(180deg, transparent 90%, orange 10%);
+    background-position: right 100px top 0;
+}
+
+/* Header End */
+
+                                                /* Main Begin */
+
+.main {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.news_logo {
+    height: 50%;
+    margin-top: 60px;
+    margin-left: -640px;
+}
+
+.news_content {
+    margin-top: 50px;
+    display: inline-block;
+}
+
+.news_content_information{
+    width: 270px;
+    text-align: center;
+    float: left;
+    padding: 8px;
+}
+
+
+.main_links{
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
+    float: left;
+}
+
+.main_links_read{
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
+    float: right;
+    font-size: 12px;
+    opacity: .8;
+}
+
+.post_data{
+    color: dimgrey;
+    font-size: 12px;
+    margin-top: 3px;
+    text-align: right;
+}
+
+.main_buttons{
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+.button{
+    color: black;
+    font-size: 20px;
+    margin: 15px;
+    padding: 4px;
+}
+
+.button:hover,
+.button.active{
+    background-color: darkgoldenrod;
+    text-decoration: underline;
+}
+
+.button.active:hover{
+    text-decoration: none;
+}
+
+
+                                                /* Main End 
+
+                                                /* FOOTER BEGIN */
+
+.footer{
+    width: 100%;
+    max-width: 100%;
+    height: 30vh;
+    background-color: rgb(20, 19, 19);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container_for_footer{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer_information{
+    color: white;
+    list-style-type: none;
+}
+
+.information_top{
+    margin: 20px 0 20px 0;
+}
+
+.information_buttom{
+    margin: 0;
+}
+
+.city{
+    color: white;
+    font-size: small;
+}
+
+#icons_list{
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#icons_list img{
+    margin: 0 5px 0 5px;
+}
+
+.facebook:hover{
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.google:hover{
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.linkedin:hover{
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.pinterest:hover{
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+
+hr{
+    border: none;
+    width: 80%;
+    margin: 0;
+    padding: 0;
+    color: grey;
+    background-color: grey;
+    height: 2px;
+}
+
+
+    /* SIZE MOBILE-S 480 AND LESS PX */
+
+@media screen and  (min-width : 320px) and (max-width : 480px){
+    .navigation{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        min-height: 60vh;
+    }
+
+    .logo{
+        margin: 0 0 0 0;
+    }
+    
+    .news_logo{
+        margin-left: 10%;
+        width: 90%;
+    }
+    
+    .news_logo>img{
+        max-width: 70%;
+    }
+    
+    .news_content{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+    .main{
+        width: 100%;
+    }
+    
+    .main_buttons{
+        width: 100%;
+        display: flex;
+    }
+    
+    .main_buttons>span{
+        width: 100%;
+        text-align: center;
+    }
+    
+    .nav-list{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .footer{
+        min-height: 100vh;
+    }
+
+    .footer_information{
+        margin: 0;
+        padding: 0;
+    }
+
+    .footer_information li{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+    }
+
+    .container_for_footer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #follow_to_us{
+        text-align: center;
+    }
+}
+
+    /* SIZE MOBILE-S 480 AND LESS PX ...END*/
+
+    /* SIZE MOBILE-S 768 AND LESS PX */
+
+@media screen and (min-width: 480px) and (max-width: 768px){
+
+    .header{
+        min-height: 30vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .navigation{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo{
+        text-align: center;
+        margin: 0;
+    } 
+
+    .news_logo{
+        margin-left: 10%;
+        width: 90%;
+    }
+
+    .news_logo>img{
+        max-width: 80%;
+    }
+    
+    .news_content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-list{
+        margin: 0;
+    }
+
+    .main{
+        width: 100%;
+    }
+    
+    .main_buttons{
+        width: 100%;
+        display: flex;
+    }
+    
+    .main_buttons>span{
+        width: 100%;
+        text-align: center;
+    }
+    
+    .footer_information{
+        margin: 0;
+        padding: 0;
+    }
+    
+    }
+
+/* SIZE MOBILE-S 768 AND LESS PX ...END */

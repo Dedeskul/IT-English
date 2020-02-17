@@ -1,0 +1,433 @@
+/* Header Begin */
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    min-height: 12vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo{
+    margin: 0 0 0 20%;
+    max-width: 10%;
+    height: 12vh;
+    float: left;
+    color: black;
+    text-align: center;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+    font-family: "Raleway";
+    line-height: 40px;
+    font-size: 40px;
+}
+
+.nav-list{
+    max-width: 45%;
+    margin: 0 0 0 30%;
+    padding: 0;
+    float: left;
+    height: 12vh;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    align-items: center;
+}
+
+.nav-list li{
+    display: inline-block;
+    font-family: "Cairo";
+    margin: 0 12px;
+}
+
+.nav-link{
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 auto;
+}
+
+.nav-item{
+    margin: 0 10px;
+    list-style-type: none;
+    background: linear-gradient(180deg, transparent 90%, orange 10%);
+    background-position: right 100px top 0;
+    background-repeat: no-repeat;
+    transition: .5s;
+    display: inline;
+}
+
+.nav-item:hover,
+.nav-item.active{
+    background-position: right 0 top 0;
+}
+
+.nav-item.active:hover{
+    background: linear-gradient(180deg, transparent 90%, orange 10%);
+    background-position: right 100px top 0;
+}
+
+.Header_information{
+    max-width: 100%;
+    min-height: 89vh;
+    text-align: center;
+}
+
+.header_tytle{
+    color: white;
+    line-height: 80px;
+    font-size: 50px;
+    margin: 0;
+    padding-top: 20vh;
+    font-family: "Cantarell";
+}
+
+.header_tytle_information{
+    color: white;
+    width: 50%;
+    text-align: center;
+    line-height: 20px;
+    font-size: 20px;
+    font-family: "Cantarell";
+    margin: 0 0 7% 25%;
+    padding: 0;
+    font-weight: bold;
+}
+
+.button_to_study{
+    padding: 15px 40px;
+    background-color: orange;
+    border: none;
+}
+
+.button_to_study a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.button_to_study:hover{
+    box-shadow: 0 0 10px 3px rgba(0,0,0,0.5);
+}
+
+.mouse_image{ 
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    
+}
+
+/* Header End */
+
+/* Main Begin */
+.googleMaps{
+    margin: 100px 15%;
+    position:relative;
+    overflow:hidden;
+}
+
+.contacts{
+    background: white;
+    position:absolute;
+    top:3%;
+    left:60%;
+    right: 3%;
+    bottom: 47%;
+    widows: 20%;
+    opacity: 0.8;
+}
+
+.contact{
+    font-family: "Cantarell";
+    font-weight: bold;
+    margin-left: 60px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.info{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    margin: 60px 25px;
+}
+
+.info img{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.info li{
+    height: 70px;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.feedback{
+    text-align: center;
+    font-weight: normal;
+    font-family: "Cantarell";
+}
+
+/* login form style */
+input{
+    outline: none;
+}
+
+.name{
+    border: 1px solid #000;
+    padding: 5px 5px 5px 5px;
+    height: 20px;
+    background: url('/images/avatar.png') no-repeat 3px 1px;
+    background-size: auto 70%;
+    background-position: right;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 15px;
+}
+.email{
+    border: 1px solid #000;
+    padding: 5px 5px 5px 5px;
+    height: 20px;
+    background: url('images/mail\ \(1\).png') no-repeat 3px 1px;
+    background-size: auto 70%;
+    background-position: right;
+    margin-left: 25px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 15px;
+}
+.text{
+    border: 1px solid #000;
+    padding: 5px 5px 5px 5px;
+    height: 20px;
+    background: url('images/pencil\ \(1\).png') no-repeat 3px 1px;
+    background-size: auto 70%;
+    background-position: right;
+    margin-top: 40px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 15px;
+}
+
+.submit{
+    border: 1px solid orange;
+    padding: 10px 100px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    background-color: orange;
+    font-size: 20px;
+    font-style: "Gupter";
+    font-weight: lighter;
+    color: white;
+}
+
+.submit:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px 3px rgba(0,0,0,0.5);
+    
+}
+
+/* login form style */
+                                                /* Main End */
+
+                                                /* FOOTER BEGIN */
+
+.footer{
+    width: 100%;
+    max-width: 100%;
+    height: 30vh;
+    background-color: rgb(20, 19, 19);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container_for_footer{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer_information{
+    color: white;
+    list-style-type: none;
+}
+
+.information_top{
+    margin: 20px 0 20px 0;
+}
+
+.information_buttom{
+    margin: 0;
+}
+
+.city{
+    color: white;
+    font-size: small;
+}
+
+#icons_list{
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#icons_list img{
+    margin: 0 5px 0 5px;
+}
+
+.facebook:hover{
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.google:hover{
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.linkedin:hover{
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.pinterest:hover{
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+
+hr{
+    border: none;
+    width: 80%;
+    margin: 0;
+    padding: 0;
+    color: grey;
+    background-color: grey;
+    height: 2px;
+}
+
+
+    /* SIZE MOBILE-S 480 AND LESS PX */
+
+@media screen and  (min-width : 320px) and (max-width : 480px){
+    .navigation{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        min-height: 60vh;
+    }
+
+    .logo{
+        margin: 0 0 0 0;
+    }
+
+    .main{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .nav-list{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .googleMaps{
+        width: 80%;
+        min-height: 10vh;
+        margin: 20px auto;
+    }
+
+    .contacts{
+        display: none;
+    }
+
+    .login{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .footer{
+        min-height: 100vh;
+    }
+
+    .footer_information{
+        margin: 0;
+        padding: 0;
+    }
+
+    .footer_information li{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+    }
+
+    .container_for_footer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #follow_to_us{
+        text-align: center;
+    }
+}
+
+    /* SIZE MOBILE-S 480 AND LESS PX */
+
+@media screen and (min-width: 480px) and (max-width: 768px){
+    
+    .footer_information{
+        margin: 0;
+        padding: 0;
+    }
+}
+
+    /* SIZE MOBILE-S 480 AND LESS PX ...END*/
+
+    /* SIZE 1024 AND LESS PX*/
+
+@media screen and (min-width : 768px) and (max-width : 1024px){
+    .logo{
+        margin: 0 0 0 80px;
+    }
+
+    .nav-list{
+        margin: 0 0 0 25%;
+    }
+
+    .contacts{
+        width: 40%;
+    }
+
+    .contact{
+        margin: 50px 0 20px 0;
+    }
+
+    .info{
+        margin: 0;
+        padding: 0;
+    }
+}
+
+/* SIZE 1024 AND LESS PX ...END*/
